@@ -1,0 +1,35 @@
+{
+  "name": "musicservice.mocha",
+  "version": "1.0..",
+  "description": "Mocha Tests",
+  "main": "index.js",
+  "scripts": {
+    "testLocal": "set NODE_ENV=local&& set NODE_TLS_REJECT_UNAUTHORIZED=0&& ts-mocha -p ./tsconfig.json ./test/**.ts --timeout 10000",
+    "testLocal-underTest": "set NODE_ENV=local&& set NODE_TLS_REJECT_UNAUTHORIZED=0&& ts-mocha -p ./tsconfig.json ./test/**.ts --grep @underTest --timeout 10000"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/validusrecruitment/testautomation"
+  },
+  "keywords": [
+    "Mocha",
+    "Test"
+  ],
+  "author": "Greg Mackey",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/expect": "^1.20.4",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^12.19.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "express": "~4.13.1",
+    "mocha": "^6.2.3",
+    "mocha-junit-reporter": "^1.23.3",
+    "ts-mocha": "^6.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {}
+}
